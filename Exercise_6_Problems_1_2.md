@@ -43,11 +43,7 @@ data = None
 
 # YOUR CODE HERE 1
 ```
-fp="data/1091402.txt"
-data = pd.read_csv(fp,delim_whitespace=True,skiprows=[1],na_values=[-9999])
 
-print(data.head())
-print(data.tail())
 
 
 ```python
@@ -73,7 +69,7 @@ In this section, you will calculate simple statistics based on the input data:
 tavg_nodata_count = None
 #YOUR CODE HERE 2
 ```
-tavg_nodata_count = data.iloc[:,6].isnull().sum()
+
 
 
 ```python
@@ -89,7 +85,7 @@ print('Number of no-data values in column "TAVG":',tavg_nodata_count)
 tmin_nodata_count = None
 #YOUR CODE HERE 3
 ```
-tmin_nodata_count = data.iloc[:8].isnull().sum()
+
 
 ```python
 # Print out the solution:

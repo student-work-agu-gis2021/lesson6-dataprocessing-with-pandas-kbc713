@@ -17,6 +17,8 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
+fp = "data/1091402.txt"
+data = pd.read_csv(fp,delim_whitespace=True,skiprows=[1],na_values=[-9999])
 
 # ### Part 2 
 # 
@@ -27,7 +29,7 @@ data = None
 
 tavg_nodata_count = None
 #YOUR CODE HERE 2
-
+tavg_nodata_count = None
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
@@ -41,6 +43,7 @@ print('Number of no-data values in column "TAVG":',tavg_nodata_count)
 tmin_nodata_count = None
 #YOUR CODE HERE 3
 
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
 print('Number of no-data values in column "TMIN":', tmin_nodata_count)
@@ -52,6 +55,7 @@ print('Number of no-data values in column "TMIN":', tmin_nodata_count)
 
 day_count = None 
 #YOUR CODE HERE 4
+
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
@@ -66,6 +70,7 @@ first_obs = None
  
 # YOUR CODE HERE 5
 
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
 print('Date of the first observation:',first_obs)
@@ -77,6 +82,7 @@ print('Date of the first observation:',first_obs)
 last_obs = None
 
 # YOUR CODE HERE 6
+
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
@@ -91,6 +97,7 @@ avg_temp = None
 
 # YOUR CODE HERE 7
 
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
 print('Average temperature (F) for the whole dataset:', round(avg_temp, 2))
@@ -103,6 +110,7 @@ print('Average temperature (F) for the whole dataset:', round(avg_temp, 2))
 avg_temp_1969 = None
 
 # YOUR CODE HERE 8
+
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print a number
